@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake O'yini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="panel">
+      <p class="eyebrow">Mini Game</p>
+      <h1>Snake O'yini</h1>
+      <p class="description">
+        Ilonni boshqaring, ovqatni yeng va devorga yoki o'zingizga urilib qolmang.
+      </p>
+
+      <div class="stats">
+        <div class="card">
+          <span>Hisob</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="card">
+          <span>Eng yaxshi</span>
+          <strong id="best-score">0</strong>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn" type="button">Boshlash / Qayta</button>
+      </div>
+
+      <ul class="tips">
+        <li>Harakat: klaviaturadagi strelkalar</li>
+        <li>Pauza: `Space`</li>
+      </ul>
+    </section>
+
+    <section class="board-wrap">
+      <canvas id="game" width="400" height="400" aria-label="Snake o'yini maydoni"></canvas>
+      <div id="message" class="message">Boshlash tugmasini bosing</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
